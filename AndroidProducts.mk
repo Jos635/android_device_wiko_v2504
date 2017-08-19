@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_v2502an.mk
+    $(LOCAL_DIR)/aosp_v2504an.mk
