@@ -39,12 +39,13 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_PREBUILT_KERNEL := device/wiko/v2504an/prebuilt/kernel
 
 TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_RECOVERY_INITRC := device/wiko/v2504/recovery/root/init.rc
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 
 # TWRP Configuration
-TARGET_RECOVERY_FSTAB := device/wiko/v2504an/recovery/root/fstab.mt6580
+TARGET_RECOVERY_FSTAB := device/wiko/v2504an/twrp.fstab
 # RECOVERY_SDCARD_ON_DATA := true
 # TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/soc/7000000.ssusb/7000000.dwc3/gadget/lun0/file"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
@@ -52,5 +53,5 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TWRP_EVENT_LOGGING := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
-# TW_SCREEN_BLANK_ON_BOOT := true
+TW_IGNORE_MAJOR_AXIS_0 := true
 TW_THEME := portrait_hdpi

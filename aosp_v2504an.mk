@@ -15,8 +15,9 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel #\
-#    device/wiko/v2504an/twrp.fstab:recovery/root/twrp.fstab
+    $(LOCAL_KERNEL):kernel \
+    device/wiko/v2504an/recovery/root/init.recovery.mt6580.rc:root/init.recovery.mt6580.rc \
+    device/wiko/v2504an/twrp.fstab:recovery/root/fstab.mt6580 \
 
 $(call inherit-product, build/target/product/full.mk)
 

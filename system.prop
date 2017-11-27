@@ -1,11 +1,13 @@
 #
 # system.prop for v2502an
 #
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
 
 #
 # ADDITIONAL_DEFAULT_PROPERTIES
 #
-ro.adb.secure=1
+ro.adb.secure=0
 persist.service.acm.enable=0
 ro.secure=1
 security.perf_harden=1
@@ -24,7 +26,7 @@ ro.hwui.path_cache_size=0
 ro.hwui.text_small_cache_width=512
 ro.hwui.text_small_cache_height=256
 ro.hwui.disable_asset_atlas=true
-persist.sys.usb.config=mtp
+persist.sys.usb.config=mtp,adb
 ro.mount.fs=EXT4
 camera.disable_zsl_mode=1
 
